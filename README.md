@@ -1,61 +1,126 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href="https://www.linkedin.com/in/mjmarcio" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href = "mailto:marciomsgj@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 </p>
 
-## About Laravel
+# Countries and Capitals Quiz
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Descrição](#descrição)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+    - [Pré-requisitos](#pré-requisitos)
+    - [Passo a Passo](#passo-a-passo)
+- [Estrutura do Código](#estrutura-do-código)
+    - [Como Funciona](#como-funciona)
+- [Contribuindo](#contribuindo)
+    - [Passos para Contribuir](#passos-para-contribuir)
+- [Licença](#licença)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Descrição
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Countries and Capitals é um simples quiz de perguntas e respostas, onde o objetivo é acertar as capitais dos países. O usuário será apresentado a um número escolhido de perguntas sobre a capital de diversos países e, ao final, o sistema mostrará o desempenho do jogador, informando a porcentagem de acertos, o total de questões acertadas e erradas.
 
-## Learning Laravel
+## Tecnologias Utilizadas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **PHP** (com Laravel)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Laravel** (Framework MVC)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Array Associativo para armazenar as perguntas e respostas (sem utilização de banco de dados)**
 
-## Laravel Sponsors
+## Funcionalidades
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Exibição de perguntas sobre países e suas respectivas capitais.
+2. O usuário escolhe a resposta correta.
 
-### Premium Partners
+Ao final, o sistema exibe:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Percentual de acertos
 
-## Contributing
+- Quantidade de perguntas respondidas corretamente e incorretamente
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Instalação
 
-## Code of Conduct
+Para rodar o projeto localmente, siga as instruções abaixo:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Pré-requisitos
+ - **PHP (versão recomendada: 8.0 ou superior)**
 
-## Security Vulnerabilities
+- **Composer**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Laravel (o projeto já vem configurado)**
 
-## License
+# Passo a Passo
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Clone o repositório:
+
+`git clone https://github.com/seu-usuario/countries-and-capitals.git`
+
+2. Instale as dependências do projeto:
+
+Navegue até o diretório do projeto e instale as dependências com o Composer:
+
+`cd countries-and-capitals
+composer install`
+
+3. Configuração do ambiente:
+
+Crie o arquivo .env a partir do arquivo .env.example:
+
+`cp .env.example .env`
+
+4. Gere a chave de aplicativo do Laravel:
+
+`php artisan key:generate`
+
+5. Rodando o servidor local:
+
+Para rodar o servidor local e acessar o aplicativo, execute o seguinte comando:
+
+`php artisan serve O servidor estará disponível em http://localhost:8000.`
+
+## Estrutura do Código
+
+- ***routes/web.php: Contém as rotas do aplicativo, incluindo a rota principal que chama o quiz.***
+
+- ***app/Http/Controllers/MainController.php: Controlador que gerencia a lógica do quiz.***
+
+- ***resources/views/components/: Contém as views do Laravel para exibição das perguntas e resultados do quiz.***
+
+ - ***app/app_data.php: Arquivo usado para extrair as perguntas e respostas do quiz.***
+
+## Como Funciona
+
+1. O usuário inicia o quiz acessando a página inicial do aplicativo e selecionando a quantidade de perguntas que desejar, com o mínimo de 3 e máximo de 30.
+
+2. O sistema gera perguntas de uma lista sorteada de países e capitais.
+
+3. O usuário seleciona a resposta e o sistema valida e mostra a resposta escolhida e a resposta correta.
+
+4. Ao final do quiz, o sistema calcula a porcentagem de acertos e exibe o total de respostas corretas e erradas além da porcentagem geral de desempenho.
+
+## Contribuindo
+
+Se você quiser contribuir com o projeto, fique à vontade para abrir issues ou enviar pull requests! Algumas áreas em que você pode contribuir incluem:
+
+- Adicionar mais funcionalidades ao quiz.
+
+- Melhorar a interface do usuário.
+
+- Corrigir bugs.
+
+## Passos para Contribuir:
+1. Fork este repositório.
+
+2. Crie uma nova branch para sua feature (git checkout -b minha-feature).
+
+3. Faça as alterações e commit-as (git commit -m 'Adicionei novas perguntas').
+
+4. Push para a branch criada (git push origin minha-feature).
+
+5. Abra um pull request para a branch principal.
+
+## Licença
+*Este projeto está licenciado sob a MIT License.*
