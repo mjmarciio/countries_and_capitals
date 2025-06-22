@@ -67,7 +67,7 @@ Navegue até o diretório do projeto e instale as dependências com o Composer:
 
 ```bash
 cd countries-and-capitals
-bash composer install
+composer install
 ```
 
 3. Configuração do ambiente:
