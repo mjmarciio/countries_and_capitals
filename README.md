@@ -90,8 +90,10 @@ php artisan key:generate
 Para rodar o servidor local e acessar o aplicativo, execute o seguinte comando:
 
 ```bash
-php artisan serve O servidor estará disponível em http://localhost:8000.
+php artisan serve
 ```
+O servidor estará disponível em http://localhost:8000.
+
 
 ## Estrutura do Código
 
