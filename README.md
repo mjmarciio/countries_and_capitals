@@ -58,8 +58,7 @@ Para rodar o projeto localmente, siga as instruções abaixo:
    
 Navegue até o diretório do projeto e instale as dependências com o Composer:
 
-```
-bash 
+```bash 
 git clone https://github.com/seu-usuario/countries-and-capitals.git
 ```
 
