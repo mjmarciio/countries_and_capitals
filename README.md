@@ -16,7 +16,6 @@
     - [Como Funciona](#como-funciona)
 - [Contribuindo](#contribuindo)
     - [Passos para Contribuir](#passos-para-contribuir)
-- [Licença](#licença)
 
 ## Descrição
 
@@ -135,6 +134,3 @@ Se você quiser contribuir com o projeto, fique à vontade para abrir issues ou 
 4. Push para a branch criada (git push origin minha-feature).
 
 5. Abra um pull request para a branch principal.
-
-## Licença
-*Este projeto está licenciado sob a MIT License.*
