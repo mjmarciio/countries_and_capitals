@@ -55,31 +55,33 @@ Para rodar o projeto localmente, siga as instruções abaixo:
 # Passo a Passo
 
 1. Clone o repositório:
+   
+Navegue até o diretório do projeto e instale as dependências com o Composer:
 
-`git clone https://github.com/seu-usuario/countries-and-capitals.git`
+```bash git clone https://github.com/seu-usuario/countries-and-capitals.git```
 
 2. Instale as dependências do projeto:
 
 Navegue até o diretório do projeto e instale as dependências com o Composer:
 
-`cd countries-and-capitals
-composer install`
+```bash cd countries-and-capitals ```
+``bash composer install``
 
 3. Configuração do ambiente:
 
 Crie o arquivo .env a partir do arquivo .env.example:
 
-`cp .env.example .env`
+```bash cp .env.example .env```
 
 4. Gere a chave de aplicativo do Laravel:
 
-`php artisan key:generate`
+```bash php artisan key:generate```
 
 5. Rodando o servidor local:
 
 Para rodar o servidor local e acessar o aplicativo, execute o seguinte comando:
 
-`php artisan serve O servidor estará disponível em http://localhost:8000.`
+```bash php artisan serve O servidor estará disponível em http://localhost:8000.```
 
 ## Estrutura do Código
 
